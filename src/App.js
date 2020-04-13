@@ -5,6 +5,7 @@ import SingleRecipe from "./pages/SingleRecipe";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { RoomProvider } from "./context";
+import MatchRecipe from "./pages/MatchRecipe";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/Recipe-app-React" component={Home}></Route>
+          <Route exact path="/matchrecipe" component={MatchRecipe}></Route>
           <Route
             exact
             path="/Recipe-app-React/:recipeId"

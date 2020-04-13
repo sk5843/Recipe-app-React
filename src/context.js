@@ -1,12 +1,19 @@
 import React, { Component } from "react";
 import items from "./data";
+import { withRouter } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 const RoomContext = React.createContext();
 
 class RoomProvider extends Component {
-  state = {
-    recipes: [],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      recipes: [],
+      filteredRecipes: [],
+    };
+  }
+
   componentDidMount() {
     this.setState({
       recipes: items,
@@ -20,6 +27,14 @@ class RoomProvider extends Component {
     });
     return recipe;
   };
+  searchRecipe = (searchtext) => {
+    let tempRecipes = items;
+
+    const recipes = tempRecipes.filter((item) =>
+      item.name.toLowerCase().includes(searchtext.toLowerCase())
+    );
+    this.setState({ recipes });
+  };
 
   render() {
     return (
@@ -27,6 +42,7 @@ class RoomProvider extends Component {
         value={{
           ...this.state,
           getRecipe: this.getRecipe,
+          searchRecipe: this.searchRecipe,
         }}
       >
         {this.props.children}

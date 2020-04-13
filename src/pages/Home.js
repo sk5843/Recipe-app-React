@@ -7,9 +7,8 @@ class Home extends Component {
   static contextType = RoomContext;
   render() {
     let { recipes } = this.context;
-    return (
+    let recipesexist = (
       <>
-        <FeaturedRecipe />
         <h2 className="recipes__subheading">Trending recipes</h2>
         <div className="recipe__grid">
           {recipes.map((item, index) => {
@@ -23,6 +22,18 @@ class Home extends Component {
             );
           })}
         </div>
+      </>
+    );
+    let errormsg = (
+      <h1 className="errormsg">
+        No recipes found. Please search for a different recipe
+      </h1>
+    );
+
+    return (
+      <>
+        <FeaturedRecipe />
+        {recipes.length > 0 ? recipesexist : errormsg}
       </>
     );
   }
