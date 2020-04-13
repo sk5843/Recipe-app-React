@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Recipe-app-React/static/css/main.54e9dfdf.chunk.css",
-    "main.js": "/Recipe-app-React/static/js/main.f4ca3df6.chunk.js",
-    "main.js.map": "/Recipe-app-React/static/js/main.f4ca3df6.chunk.js.map",
+    "main.css": "/Recipe-app-React/static/css/main.6f719552.chunk.css",
+    "main.js": "/Recipe-app-React/static/js/main.e806c8c1.chunk.js",
+    "main.js.map": "/Recipe-app-React/static/js/main.e806c8c1.chunk.js.map",
     "runtime-main.js": "/Recipe-app-React/static/js/runtime-main.b1e0e2e9.js",
     "runtime-main.js.map": "/Recipe-app-React/static/js/runtime-main.b1e0e2e9.js.map",
-    "static/js/2.1794d6fe.chunk.js": "/Recipe-app-React/static/js/2.1794d6fe.chunk.js",
-    "static/js/2.1794d6fe.chunk.js.map": "/Recipe-app-React/static/js/2.1794d6fe.chunk.js.map",
+    "static/js/2.19d50c80.chunk.js": "/Recipe-app-React/static/js/2.19d50c80.chunk.js",
+    "static/js/2.19d50c80.chunk.js.map": "/Recipe-app-React/static/js/2.19d50c80.chunk.js.map",
     "index.html": "/Recipe-app-React/index.html",
-    "precache-manifest.edcd19d744f76fa82ecfdf07dc72ae7c.js": "/Recipe-app-React/precache-manifest.edcd19d744f76fa82ecfdf07dc72ae7c.js",
+    "precache-manifest.e9de488718af10745ac68fba4881cd0c.js": "/Recipe-app-React/precache-manifest.e9de488718af10745ac68fba4881cd0c.js",
     "service-worker.js": "/Recipe-app-React/service-worker.js",
-    "static/css/main.54e9dfdf.chunk.css.map": "/Recipe-app-React/static/css/main.54e9dfdf.chunk.css.map",
-    "static/js/2.1794d6fe.chunk.js.LICENSE.txt": "/Recipe-app-React/static/js/2.1794d6fe.chunk.js.LICENSE.txt",
+    "static/css/main.6f719552.chunk.css.map": "/Recipe-app-React/static/css/main.6f719552.chunk.css.map",
+    "static/js/2.19d50c80.chunk.js.LICENSE.txt": "/Recipe-app-React/static/js/2.19d50c80.chunk.js.LICENSE.txt",
     "static/media/banana-pancake-featured.jpg": "/Recipe-app-React/static/media/banana-pancake-featured.6c429e34.jpg",
     "static/media/banana-pancakes-600x600.jpg": "/Recipe-app-React/static/media/banana-pancakes-600x600.09ae748e.jpg",
     "static/media/indian-eggplant-600x600.jpg": "/Recipe-app-React/static/media/indian-eggplant-600x600.14a8db4d.jpg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b1e0e2e9.js",
-    "static/js/2.1794d6fe.chunk.js",
-    "static/css/main.54e9dfdf.chunk.css",
-    "static/js/main.f4ca3df6.chunk.js"
+    "static/js/2.19d50c80.chunk.js",
+    "static/css/main.6f719552.chunk.css",
+    "static/js/main.e806c8c1.chunk.js"
   ]
 }
