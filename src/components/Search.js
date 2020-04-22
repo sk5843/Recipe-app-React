@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { RoomContext } from "../context";
+import { RoomContext } from "../context/context";
 import { withRouter } from "react-router-dom";
 
 class Search extends Component {

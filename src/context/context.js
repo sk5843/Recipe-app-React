@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import items from "./data";
+import items from "../data";
 import { withRouter } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 

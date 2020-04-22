@@ -5,7 +5,7 @@ import featuredimage from "../images/banana-pancake-featured.jpg";
 export default function FeaturedRecipe() {
   return (
     <Link
-      to="/Recipe-app-React/banana-egg-pancakes"
+      to="/Recipe-app-React/recipes/banana-egg-pancakes"
       className="featured-recipe"
       href="#"
     >

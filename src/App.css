@@ -15,7 +15,6 @@
   border-bottom: 1px solid rgb(211, 211, 211, 0.7);
   margin-bottom: 3rem;
   align-items: center;
-  background: #b4f1f1;
 }
 .App-header-Link {
   text-decoration: none;
@@ -28,6 +27,12 @@
 }
 .App-header-Link:hover {
   color: #278090;
+}
+.Auth-link {
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 60px;
+  cursor: pointer;
 }
 
 .errormsg {
@@ -146,7 +151,6 @@
   display: block;
   max-width: 100%;
 }
-
 /* Featured recipe end */
 
 .recipes__subheading {
@@ -213,6 +217,36 @@
   color: #000;
   padding-bottom: 1rem;
   display: block;
+}
+.fridgelist {
+  list-style: none;
+  border: 1px solid black;
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+.fridgelist-wrapper {
+  width: 40%;
+}
+.fridgelist-heading {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  color: #000;
+}
+.delete-ingredient {
+  margin-left: 1rem;
+  color: red;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.ingredient-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid grey;
 }
 
 /* Recipe details container */
@@ -322,3 +356,224 @@
   display: flex;
   justify-content: space-between;
 }
+.flexwrapper {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.add-heading {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.addform-wrapper {
+  display: flex;
+}
+.add-ingredient {
+  width: 100%;
+  border: 1px solid #2a2b2a;
+  padding: 10px 50px;
+  text-align: center;
+  outline: none;
+  color: #000;
+  font-size: 1rem;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+}
+.add-button {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  margin-left: 20px;
+  padding: 10px 50px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+/* Auth pages start */
+.auth-flexwrapper {
+  display: flex;
+}
+.auth-bg {
+  background: url(./images/authbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  height: 100vh;
+}
+.signin__wrapper {
+  padding: 1.875rem 0px;
+  width: 50vw;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signin__ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.875rem 0px 1rem;
+}
+.Auth-logo {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+}
+.signin__formwrapper {
+  max-width: 20rem;
+  padding: 2.5rem 2.1875rem;
+  width: 100%;
+}
+.signin__heading {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 0px 0px 1.875rem;
+  color: rgb(74, 74, 74);
+}
+.signin__textfield {
+  margin-bottom: 1rem;
+}
+.signin__labelwrapper {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.3125rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: rgb(218, 220, 224);
+  border-image: initial;
+  transition: box-shadow 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s,
+    border 0.2s ease-in-out 0s;
+}
+.signin__labelwrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0.375rem 0.375rem -0.375rem;
+}
+
+.signin__input {
+  -webkit-appearance: none;
+  line-height: 1.2;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 1rem;
+  height: 2.8125rem;
+  letter-spacing: 0.03em;
+  border-width: 0px;
+  outline: none;
+  padding: 1.125rem 0.625rem 0.1875rem;
+}
+
+.signin__label {
+  color: rgb(155, 155, 155);
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: normal;
+  letter-spacing: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.5625rem;
+  transition: all 200ms cubic-bezier(0, 0.22, 0.12, 1) 0s;
+}
+.signin__input:focus + .signin__label,
+.signin__input:valid + .signin__label {
+  box-sizing: border-box;
+  line-height: 1;
+  font-weight: 400;
+  position: absolute;
+  left: 0.5625rem;
+  color: rgb(34, 64, 245);
+  font-size: 0.625rem;
+  letter-spacing: 0.05rem;
+  top: 0.5625rem;
+  transition: all 200ms cubic-bezier(0, 0.22, 0.12, 1) 0s;
+}
+
+.auth-btnwrapper {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 1.5rem 0px 1rem;
+}
+.auth-btn {
+  width: 100%;
+  cursor: pointer;
+  height: 2.8125rem;
+  font-size: 0.875rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625rem 0.125rem 0px,
+    rgba(0, 0, 0, 0.15) 0px 0.0625rem 0.1875rem 0px;
+  background: none rgb(34, 64, 245);
+  outline: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  padding: 0px 1.5625rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.signin__footerwrapper {
+  color: rgb(155, 155, 155);
+  font-size: 0.75rem;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+}
+.signin__footerwrapper > p {
+  line-height: 1;
+  padding-right: 0.25rem;
+  margin: 0px;
+}
+.signin__footerlink {
+  font-size: 0.75rem;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(34, 64, 245);
+  background: none;
+  outline: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  padding: 0px;
+  transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+/* Auth pages end */

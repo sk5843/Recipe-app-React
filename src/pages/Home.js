@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { RoomContext } from "../context";
+import { RoomContext } from "../context/context";
 import RecipeBox from "../components/RecipeBox";
 import FeaturedRecipe from "../components/FeaturedRecipe";
+import Navbar from "../components/Navbar";
 
 class Home extends Component {
   static contextType = RoomContext;
@@ -32,6 +33,7 @@ class Home extends Component {
 
     return (
       <>
+        <Navbar />
         <FeaturedRecipe />
         {recipes.length > 0 ? recipesexist : errormsg}
       </>
