@@ -1,15 +1,15 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
-import "firebase/auth";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 
 const firebaseConfig = firebase.initializeApp({
-  apiKey: "AIzaSyDFXsJeBZYfzmfIG1_ePN3Aoiq3VrsDYW0",
-  authDomain: "recipe-app-9b9c3.firebaseapp.com",
-  databaseURL: "https://recipe-app-9b9c3.firebaseio.com",
-  projectId: "recipe-app-9b9c3",
-  storageBucket: "recipe-app-9b9c3.appspot.com",
-  messagingSenderId: "743824394202",
-  appId: "1:743824394202:web:8c058e930c81349119e2e3",
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSENGER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 });
 
 export { firebaseConfig as firebase };
